@@ -1,0 +1,14 @@
+html
+    head
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+    body
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+          a.navbar-brand(href='#') Quyết đê
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarNavAltMarkup.collapse.navbar-collapse
+            .navbar-nav
+              a.nav-item.nav-link(href='/ask') Hỏi nhanh
+              a.nav-item.nav-link(href='/question') Đáp gọn
+        .container.pt-5
+            block content

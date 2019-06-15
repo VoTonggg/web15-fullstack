@@ -1,0 +1,7 @@
+extends ../layouts/common.pug
+block content
+	h1 Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không
+	form(action="/ask", method="POST")
+		textarea(name="content",rows="4", cols="100").mb-3
+		p Còn 100/200 kí tự 
+		button.btn.btn-primary Gửi

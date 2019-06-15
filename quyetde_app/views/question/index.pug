@@ -1,0 +1,12 @@
+extends ../layouts/common.pug
+
+block content
+	h1.text-center= question.content 
+
+	.d-flex.justify-content-around.mt-3
+		button.btn.btn-primary Đúng/Có/Phải 
+		button.btn.btn-danger Sai/Không/Trái 
+
+	.d-flex.mt-3.justify-content-center
+		button.btn.btn-light.border.border-dark.mr-2 Câu hỏi khác
+		button.btn.btn-light.border.border-dark Xem kết quả 
